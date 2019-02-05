@@ -1,0 +1,23 @@
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+}
+void loop() {
+  digitalWrite(11, HIGH); //Работа зеленого светодиода
+  delay(15000);                          
+  for (int i=0; i<3; i++){  //цикл мигания ЗС
+    digitalWrite(11, LOW);
+    delay(1000);
+    digitalWrite(11, HIGH); 
+    delay(1000);
+    };
+  digitalWrite(11, LOW);
+  digitalWrite(13, HIGH); //Смена ЗС на КС
+  delay(20000);
+  digitalWrite(12, HIGH); //Включение ЖС
+  delay(3000);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);                     
+}
