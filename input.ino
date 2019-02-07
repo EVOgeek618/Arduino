@@ -1,7 +1,7 @@
-#define LED_PIN 13
-#define DIGITAL_IN 7
+#define LED_PIN 13 //светодиод
+#define DIGITAL_IN 7 //кнопка
 void setup() {
-  // put your setup code here, to run once:
+  
 pinMode(LED_PIN,OUTPUT);
 pinMode(DIGITAL_IN,INPUT_PULLUP);
 }
